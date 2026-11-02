@@ -1,24 +1,24 @@
 /* English / Hindi switch.
-   - One button swaps all the text on the page (no reload, animations keep running).
-   - The choice is remembered in localStorage.
+
    - The Hindi fonts are downloaded only when someone switches to Hindi. */
 (function () {
   const STORAGE_KEY = 'wedding-lang';
-  const FONT_URL = 'https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap';
+  const FONT_URL = 'https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Great+Vibes&family=Lato:wght@300;400;700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap';
+  
 
   // [English text on the page, Hindi text]
   const PAIRS = [
   ["Abhishek & Priya's Wedding", "अभिषेक और प्रिया का विवाह"],
   ["Preparing Your Royal Experience...", "आपके लिए शाही अनुभव तैयार हो रहा है..."],
   ["Your browser does not support the audio element.", "आपका ब्राउज़र ऑडियो का समर्थन नहीं करता।"],
-  ["A&P WEDDING", "अभि & प्रिया"],
+  ["A&P WEDDING", "A&P WEDDING"],
   ["Home", "होम"],
   ["Gallery", "गैलरी"],
   ["Family & Friends", "परिवार और मित्र"],
-  ["Countdown", "उलटी गिनती"],
+  ["Countdown", "काउंट-डाउन"],
   ["Schedule", "कार्यक्रम"],
   ["Varmala", "वरमाला"],
-  ["Photo", "फोटो"],
+ ["Photo Booth", ""],
   ["Warmly Inviting You to the Grand Celebration of Our Marriage", "हमारे विवाह के भव्य उत्सव में आपका हार्दिक स्वागत है"],
   ["GM Resort", "जी.एम. रिसॉर्ट"],
   ["25 November 2026", "25 नवंबर 2026"],
@@ -27,10 +27,10 @@
   ["Seeking Lord Ganesha's divine blessings for an auspicious beginning.", "शुभ आरंभ के लिए भगवान गणेश का दिव्य आशीर्वाद प्राप्त करते हुए।"],
   ["✨ Welcome to the Celebration of Abhishek & Priya · 25 November 2026 ✨", "✨ अभिषेक और प्रिया के उत्सव में आपका स्वागत है · 25 नवंबर 2026 ✨"],
   ["Our Precious Memories", "हमारी अनमोल यादें"],
-  ["Curated moments floating and gracefully interacting in rhythmic harmony", "सुंदर क्षण, जो लय में तैरते और एक-दूसरे से मिलते हैं"],
+  ["Curated moments floating and gracefully interacting in rhythmic harmony", "खूबसूरती से एक-दूसरे में ढलते हुए हमारे सबसे प्यारे यादगार पल।"],
   ["Pillars of Love & Blessings", "प्रेम और आशीर्वाद के स्तंभ"],
   ["Meet our beloved families and cherished squad making our union extraordinary", "हमारे प्रिय परिवार और अपनों से मिलिए, जो हमारे मिलन को अद्भुत बनाते हैं"],
-  ["The Royal Families", "शाही परिवार"],
+  ["The Royal Families", "परिवार"],
   ["Friends & Siblings", "मित्र और भाई-बहन"],
   ["👑 Groom's Side 👑", "👑 वर पक्ष 👑"],
   ["Garg Family", "गर्ग परिवार"],
@@ -265,3 +265,6 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
+
+
+

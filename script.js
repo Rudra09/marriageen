@@ -2,7 +2,7 @@ const tr = (s) => (window.t ? window.t(s) : s);
 const IS_MOBILE = window.innerWidth <= 992;
 const IS_LOW_END = (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4) ||
                    (navigator.deviceMemory && navigator.deviceMemory <= 4);
-// weak phones get half as many decorative particles
+
 const PERF = IS_LOW_END && IS_MOBILE ? 0.5 : 1;
 
 // pause the shimmering hero name while the hero is out of view

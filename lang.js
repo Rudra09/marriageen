@@ -18,7 +18,7 @@
   ["Countdown", "काउंट-डाउन"],
   ["Schedule", "कार्यक्रम"],
   ["Varmala", "वरमाला"],
- ["Photo Booth", ""],
+ ["Photo Booth", "फोटो बूथ"],
   ["Warmly Inviting You to the Grand Celebration of Our Marriage", "हमारे विवाह के भव्य उत्सव में आपका हार्दिक स्वागत है"],
   ["GM Resort", "जी.एम. रिसॉर्ट"],
   ["25 November 2026", "25 नवंबर 2026"],
